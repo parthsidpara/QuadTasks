@@ -1,0 +1,1 @@
+This plugin allows users to create an Eisenhower Matrix for task management directly within Obsidian notes.
