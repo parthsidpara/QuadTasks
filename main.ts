@@ -108,10 +108,12 @@ export default class EisenhowerMatrixPlugin extends Plugin {
             background: var(--background-primary);
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
             min-height: 250px;
+            max-height: 400px;
             display: flex;
             flex-direction: column;
             transition: all 0.2s ease;
             border: 1px solid var(--background-modifier-border);
+            overflow: hidden;
         }
 
         .quadrant:hover {
@@ -155,6 +157,9 @@ export default class EisenhowerMatrixPlugin extends Plugin {
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
+            max-height: calc(100% - 3rem); 
+            overflow-y: auto; /* Add scrollbar */
+            overflow-x: hidden;
         }
 
         .task-item {
